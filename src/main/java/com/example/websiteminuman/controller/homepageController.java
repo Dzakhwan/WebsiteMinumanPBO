@@ -26,9 +26,18 @@ public class homepageController {
     public String showCollaboration() {
         return "collaboration";
     }
+    @GetMapping("/download")
+    public String showDownload() {
+        return "download";
+    }
     
-    @GetMapping("/login")
-    public String showLogin() {
+    @GetMapping("/admin/dashboard")
+    public String showDashboard() {
+        return "dashboardAdmin";
+    }
+
+    @GetMapping("/loginTest")
+    public String showLoginAdmin() {
         return "loginTest";
     }
 }
